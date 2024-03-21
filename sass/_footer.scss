@@ -1,0 +1,26 @@
+.footer__menu {
+    *{
+        color:var(--white-color);
+    }
+    display:flex;
+    flex-direction:column;
+    background-color:var(--footer-background-color);
+    padding: 22px 25px 22px 25px;
+   
+    h3 {
+        font-family:$font-title;
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    ul{
+        padding:0px;
+       
+        i {
+            width:20px;
+        }
+        a{
+            font-weight: 500;
+        }
+    }
+}
