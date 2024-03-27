@@ -1,0 +1,168 @@
+
+.banner__menu{
+    img{
+    width:100%;
+    height:275px;
+    }
+}
+
+.menu-restaurant{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    z-index: 999;
+    margin-top: -30px;
+    background-color:var(--primary-background-color);
+    padding:32px 13px 0 13px;
+    border-radius: 25px 25px 0 0;
+    gap:40px
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    padding-top:  32px;
+    margin-top: -32px;
+    gap:40px;
+    border-radius: 25px 25px 0 0;
+    box-sizing:border-box;
+    width:100%;
+
+    &__title{
+        display:flex;
+        align-items: center;
+        gap:30px;
+        
+        h2{
+        font-family: $font-title;
+        font-size:28px;
+        font-weight:400;
+        font-style: italic;
+        }
+
+        &__icon{
+
+            .fa-regular{
+                position:absolute;  
+                transition: all  1s ease-in-out;  
+            }
+      
+            .fa-solid{
+                position:absolute;
+                opacity: 0;
+                color: var(--main-color);
+                transition: all  1s ease-in-out;             
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        gap: 40px;
+
+        &__type{
+            display: flex;
+            flex-direction:column;
+            gap:12px;
+        
+            h3 {
+                font-size:  16px;
+                font-weight: 300;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: column;
+
+                &:after{
+                    content: "";
+                    width: 40px;
+                    height: 1px;
+                    padding-top: 5px;
+                    border-bottom: 3px solid #99E2D0;
+                }
+            }
+
+                
+            &__card{
+                display:flex;
+                box-shadow: $card-shadow;
+                border-radius: 15px;
+                overflow: hidden;
+             
+                &__content{
+                    display:flex;
+                    min-width: 0;
+                    flex:1;
+                    flex-direction:row;
+                    justify-content: space-between;
+                    border-radius: 15px;
+                    background-color: var(--white-color);
+                    padding: 13.5px 15px 13.5px 15px;
+                    gap:12px;
+            
+                    &__txt{
+                        min-width: 0;
+
+                        h4{
+                            font-size:  18px;
+                            font-weight: 500;
+                            padding-bottom: 5px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                        p{
+                            font-size:  15px;
+                            font-weight: 300;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    }
+
+                    &__prix {
+                        display:flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        white-space: nowrap;
+                        font-size:  15px;
+                    }
+                }
+
+                &__check {
+                    background-color: var(--check-green-color);
+                    width:0px;
+                    display: flex;
+                    height: auto;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0 15px 15px 0;
+                    text-align: center;
+                    color: #fff;
+            
+                    .fa-regular{
+                        color: var(--check-green-color);
+                        display:flex;
+                        align-items: center;
+                        position: absolute;
+                        right: 5%;
+                        z-index: 250;
+                        background-color: white;        
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.command-button {
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:40px;
+
+    .button-action {
+        width:186px;
+    }
+}

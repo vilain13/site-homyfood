@@ -1,0 +1,149 @@
+/************ BOUTON ACTION *******************/
+.button-action:hover {
+    filter: brightness(1.09);
+    box-shadow: $button-shadow-more-visible;
+    transition: all 0.5s ease-in-out;    
+  }
+
+
+.restaurants__main__card__content__icon {
+   
+        .fa-regular:hover{
+                opacity:0;
+                transition: 1s ease-in-out;
+        }
+
+        .fa-solid:hover{
+                opacity: 1;
+                transition: 1s ease-in-out;  
+        }
+}
+
+
+.menu__title__icon {
+        .fa-regular:hover{
+            opacity:0;
+            transition:  1s ease-in-out;
+        }
+
+        .fa-solid:hover{ 
+            opacity: 1;
+            transition: 1s ease-in-out;
+}
+}
+
+
+/** Animation  PRELOADER **/
+
+/** Animation du LOGO Header **/
+
+@keyframes logo-header {
+    0% {
+        opacity:0;
+        transform: scaleX(0);
+    }
+
+    100%{
+        opacity:1;
+        transform: scaleX(1)
+    }
+}
+
+
+/** Animation du Flash loader **/
+
+@keyframes flashloader {
+    0%{
+        color: var(--main-color);
+        text-shadow: 0 0 7px  var(--main-color);
+    }
+    
+    80%{
+        color: var(--second-color);
+        text-shadow: none;
+    }
+
+    100%{
+        color: var(--main-color);
+        text-shadow: 0 0 7px  var(--main-color);
+    }
+}
+
+
+@for $i from 1 through 9 { 
+    .loader__text .letter#{$i} { 
+    animation-delay: $i * 0.1s; 
+    }
+ } 
+
+
+@keyframes hide-preloader {   
+        90% {
+          visibility: visible;
+        }
+        100% {
+          visibility: hidden;
+        } 
+}
+
+
+
+/** Apparition des plats au fur et à mesure **/
+
+@for $i from 1 through 20 { 
+    .menu__container__type__card.animation-plat#{$i} {
+    animation-name: fadein-plat;
+    animation-delay: $i * 0.5s; 
+    opacity: 0;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    }
+  } 
+
+
+@keyframes fadein-plat {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+/** Animation du bouton check au survol **/ 
+
+@keyframes fadein-check {
+    0% {
+        width:0px;
+    }
+    100% {
+        width: 59px;
+    }
+}
+
+
+@keyframes fadeout-check {
+    0% {
+        width: 59px;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+.menu__container__type__card:hover .check-animation {
+    animation-name: fadein-check;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.check-animation {
+    animation-name: fadeout-check;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
