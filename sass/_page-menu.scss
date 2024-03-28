@@ -3,6 +3,7 @@
     img{
     width:100%;
     height:275px;
+    object-fit:cover;
     }
 }
 
@@ -59,7 +60,6 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 40px;
         gap: 40px;
 
         &__type{
@@ -159,7 +159,7 @@
 
 .command-button {
     text-align:center;
-    padding-top:40px;
+
     padding-bottom:40px;
 
     .button-action {

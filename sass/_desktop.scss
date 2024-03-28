@@ -1,6 +1,96 @@
 /****** Media queries ***********/
 /* Desktop devices ( more/equal than 1024px) */
-@media (min-width: 1024pxpx) {
+@media (min-width: 1024px) {
 
+        /** Page d'accueil **/
+        .main-header {
+            box-shadow: none;
+        }
+        .main-container {
+            .location {
+                box-shadow: none;
+            }
+    
+            .fonctionnement{
+                padding-left:8%;
+                padding-right:8%;
+    
+                &__main {
+                    flex-direction:row;
+                }
+            }
+    
+            .restaurants {
+                padding-left:8%;
+                padding-right:8%;
+    
+                &__main {
+                    flex-direction:row;
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+                    row-gap: 50px;
+                  
+                    a{
+                        width:46%;     
+                    }
+                }
+            }
+        }
+    
+        .footer__menu {
+            flex-direction:row-reverse;
+            align-items:center;
+            padding: 65px 25px 22px 25px;
+    
+            h3 {
+                margin-bottom:0;
+                width:130px;
+            }
+    
+            ul{
+                display:flex;
+                gap:12px;
+    
+                :nth-child(2){
+                    width:190px;
+                }
+    
+                :nth-child(3){
+                    width:130px;
+                }
+    
+                :nth-child(4){
+                    width:130px;
+                }
+            } 
+        }
+    
+    /** Page des Menus **/
+    
+    .main-header a{
+        top: 25px;
+    }
+    
+    .banner__menu {
+        img {
+            height: 383px;
+        }
+    }
+    
+    .main-container {
+        padding-left:100px;
+        padding-right:100px;
+    }
+    
+    .menu-restaurant {
+        padding: 32px 203px 0 203px;
+        margin-left: 100px;
+        margin-right:100px;
+    }
+    
+    .menu__title {
+        justify-content:center;
+    }
+    
 
 }
