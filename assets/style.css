@@ -37,6 +37,7 @@ a {
   text-decoration: none;
 }
 
+/** Bouton call to action sur page acceuil et pages menu **/
 .button-action {
   width: 218px;
   text-align: center;
@@ -96,6 +97,20 @@ a {
   text-align: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+}
+.main-container .location input {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--second-background-color);
+  border-style: none;
+  width: 110px;
+}
+.main-container .location input::-moz-placeholder {
+  color: var(--black-color);
+}
+.main-container .location input::placeholder {
+  color: var(--black-color);
 }
 .main-container .location i {
   color: #353535;
@@ -208,12 +223,26 @@ a {
   display: flex;
   flex-direction: column;
   color: var(--black-color);
+  gap: 5px;
 }
 .main-container .restaurants__main__card__content__txt h3 {
   font-size: 18px;
 }
 .main-container .restaurants__main__card__content__txt p {
   font-size: 17px;
+}
+.main-container .restaurants__main__card__content__icon {
+  width: 50px;
+}
+.main-container .restaurants__main__card__content__icon input {
+  position: absolute;
+  cursor: pointer;
+  right: 26px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+  z-index: 50;
+  opacity: 0;
 }
 .main-container .restaurants__main__card__content__icon .fa-regular {
   position: absolute;
@@ -265,6 +294,9 @@ a {
   font-weight: 400;
 }
 .footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   padding: 0px;
 }
 .footer__menu ul i {
@@ -296,6 +328,7 @@ a {
 .menu {
   display: flex;
   flex-direction: column;
+  position: relative;
   padding-top: 32px;
   margin-top: -32px;
   gap: 40px;
@@ -313,6 +346,15 @@ a {
   font-size: 28px;
   font-weight: 400;
   font-style: italic;
+}
+.menu__title__icon input {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  width: 32px;
+  height: 50px;
+  z-index: 50;
+  opacity: 0;
 }
 .menu__title__icon .fa-regular {
   position: absolute;
@@ -353,6 +395,19 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
+  /** actuellement 10 plats maxi, prévu pour 12 **/
 }
 .menu__container__type__card__content {
   display: flex;
@@ -390,6 +445,114 @@ a {
   white-space: nowrap;
   font-size: 15px;
 }
+.menu__container__type__card #check-valid1 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid2 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid3 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid4 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid5 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid6 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid7 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid8 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid9 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid10 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid11 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+.menu__container__type__card #check-valid12 {
+  cursor: pointer;
+  width: 59px;
+  height: 75px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  right: 0;
+}
 .menu__container__type__card__check {
   background-color: var(--check-green-color);
   width: 0px;
@@ -421,15 +584,28 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, more/equal than 768px) */
+@media (min-width: 768px) {
+  /**   RAS   rien à corriger **/
+}
 /****** Media queries ***********/
 /* Desktop devices ( more/equal than 1024px) */
 @media (min-width: 1024px) {
-  /** Page d'accueil **/
+  /** Header  **/
   .main-header {
     box-shadow: none;
   }
+  .main-header a {
+    top: 25px;
+  }
+  .main-header img {
+    width: 200px;
+  }
+  /** Page d'accueil **/
   .main-container .location {
     box-shadow: none;
+  }
+  .main-container .banner h1 {
+    font-size: 40px;
   }
   .main-container .fonctionnement {
     padding-left: 8%;
@@ -451,32 +627,7 @@ a {
   .main-container .restaurants__main a {
     width: 46%;
   }
-  .footer__menu {
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 65px 25px 22px 25px;
-  }
-  .footer__menu h3 {
-    margin-bottom: 0;
-    width: 130px;
-  }
-  .footer__menu ul {
-    display: flex;
-    gap: 12px;
-  }
-  .footer__menu ul :nth-child(2) {
-    width: 190px;
-  }
-  .footer__menu ul :nth-child(3) {
-    width: 130px;
-  }
-  .footer__menu ul :nth-child(4) {
-    width: 130px;
-  }
   /** Page des Menus **/
-  .main-header a {
-    top: 25px;
-  }
   .banner__menu img {
     height: 383px;
   }
@@ -488,6 +639,30 @@ a {
   .menu__title {
     justify-content: center;
   }
+  /** Footer **/
+  .footer__menu {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 65px 25px 22px 25px;
+  }
+  .footer__menu h3 {
+    margin-bottom: 0;
+    width: 130px;
+  }
+  .footer__menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .footer__menu ul :nth-child(2) {
+    width: 190px;
+  }
+  .footer__menu ul :nth-child(3) {
+    width: 130px;
+  }
+  .footer__menu ul :nth-child(4) {
+    width: 130px;
+  }
 }
 /************ BOUTON ACTION *******************/
 .button-action:hover {
@@ -496,20 +671,15 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-.restaurants__main__card__content__icon .fa-regular:hover {
-  opacity: 0;
-  transition: 1s ease-in-out;
-}
-.restaurants__main__card__content__icon .fa-solid:hover {
+/** Animation de l'icone Coeur Home-page et  page-menu au clic **/
+.restaurants__main__card input:checked ~ .icone-heart-regular,
+.menu__title__icon input:checked ~ .icone-heart-regular {
   opacity: 1;
   transition: 1s ease-in-out;
 }
 
-.menu__title__icon .fa-regular:hover {
-  opacity: 0;
-  transition: 1s ease-in-out;
-}
-.menu__title__icon .fa-solid:hover {
+.restaurants__main__card input:checked ~ .icone-heart-solid,
+.menu__title__icon input:checked ~ .icone-heart-solid {
   opacity: 1;
   transition: 1s ease-in-out;
 }
@@ -541,38 +711,47 @@ a {
     text-shadow: 0 0 7px var(--main-color);
   }
 }
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter1 {
   animation-delay: 0.1s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter2 {
   animation-delay: 0.2s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter3 {
   animation-delay: 0.3s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter4 {
   animation-delay: 0.4s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter5 {
   animation-delay: 0.5s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter6 {
   animation-delay: 0.6s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter7 {
   animation-delay: 0.7s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter8 {
   animation-delay: 0.8s;
 }
 
+/** 9 lettres de la mention "loading .." à afficher **/
 .loader__text .letter9 {
   animation-delay: 0.9s;
 }
@@ -586,6 +765,7 @@ a {
   }
 }
 /** Apparition des plats au fur et à mesure **/
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat1 {
   animation-name: fadein-plat;
   animation-delay: 0.5s;
@@ -594,6 +774,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat2 {
   animation-name: fadein-plat;
   animation-delay: 1s;
@@ -602,6 +783,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat3 {
   animation-name: fadein-plat;
   animation-delay: 1.5s;
@@ -610,6 +792,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat4 {
   animation-name: fadein-plat;
   animation-delay: 2s;
@@ -618,6 +801,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat5 {
   animation-name: fadein-plat;
   animation-delay: 2.5s;
@@ -626,6 +810,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat6 {
   animation-name: fadein-plat;
   animation-delay: 3s;
@@ -634,6 +819,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat7 {
   animation-name: fadein-plat;
   animation-delay: 3.5s;
@@ -642,6 +828,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat8 {
   animation-name: fadein-plat;
   animation-delay: 4s;
@@ -650,6 +837,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat9 {
   animation-name: fadein-plat;
   animation-delay: 4.5s;
@@ -658,6 +846,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat10 {
   animation-name: fadein-plat;
   animation-delay: 5s;
@@ -666,6 +855,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat11 {
   animation-name: fadein-plat;
   animation-delay: 5.5s;
@@ -674,73 +864,10 @@ a {
   animation-fill-mode: forwards;
 }
 
+/** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
 .menu__container__type__card.animation-plat12 {
   animation-name: fadein-plat;
   animation-delay: 6s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat13 {
-  animation-name: fadein-plat;
-  animation-delay: 6.5s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat14 {
-  animation-name: fadein-plat;
-  animation-delay: 7s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat15 {
-  animation-name: fadein-plat;
-  animation-delay: 7.5s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat16 {
-  animation-name: fadein-plat;
-  animation-delay: 8s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat17 {
-  animation-name: fadein-plat;
-  animation-delay: 8.5s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat18 {
-  animation-name: fadein-plat;
-  animation-delay: 9s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat19 {
-  animation-name: fadein-plat;
-  animation-delay: 9.5s;
-  opacity: 0;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.menu__container__type__card.animation-plat20 {
-  animation-name: fadein-plat;
-  animation-delay: 10s;
   opacity: 0;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
@@ -754,7 +881,7 @@ a {
     opacity: 1;
   }
 }
-/** Animation du bouton check au survol **/
+/** Animation du bouton check à utiliser au Clic et au Survol  **/
 @keyframes fadein-check {
   0% {
     width: 0px;
@@ -771,6 +898,7 @@ a {
     width: 0px;
   }
 }
+.menu__container input:checked ~ .check-animation,
 .menu__container__type__card:hover .check-animation {
   animation-name: fadein-check;
   animation-duration: 0.7s;

@@ -6,31 +6,22 @@
   }
 
 
-.restaurants__main__card__content__icon {
-   
-        .fa-regular:hover{
-                opacity:0;
-                transition: 1s ease-in-out;
-        }
+  /** Animation de l'icone Coeur Home-page et  page-menu au clic **/ 
 
-        .fa-solid:hover{
-                opacity: 1;
-                transition: 1s ease-in-out;  
-        }
+  
+.restaurants__main__card input:checked ~ .icone-heart-regular,
+.menu__title__icon input:checked ~ .icone-heart-regular {
+    opacity:1;
+    transition: 1s ease-in-out;
 }
 
 
-.menu__title__icon {
-        .fa-regular:hover{
-            opacity:0;
-            transition:  1s ease-in-out;
-        }
+.restaurants__main__card input:checked ~ .icone-heart-solid,
+.menu__title__icon input:checked ~ .icone-heart-solid {
+    opacity:1;
+    transition: 1s ease-in-out;
+}
 
-        .fa-solid:hover{ 
-            opacity: 1;
-            transition: 1s ease-in-out;
-}
-}
 
 
 /** Animation  PRELOADER **/
@@ -70,7 +61,7 @@
 }
 
 
-@for $i from 1 through 9 { 
+@for $i from 1 through 9 {   /** 9 lettres de la mention "loading .." à afficher **/
     .loader__text .letter#{$i} { 
     animation-delay: $i * 0.1s; 
     }
@@ -87,10 +78,9 @@
 }
 
 
-
 /** Apparition des plats au fur et à mesure **/
 
-@for $i from 1 through 20 { 
+@for $i from 1 through 12 {    /** 10 maxi pour le moment selon menu, prévu pour 12 maxi ** **/
     .menu__container__type__card.animation-plat#{$i} {
     animation-name: fadein-plat;
     animation-delay: $i * 0.5s; 
@@ -111,7 +101,7 @@
 }
 
 
-/** Animation du bouton check au survol **/ 
+/** Animation du bouton check à utiliser au Clic et au Survol  **/ 
 
 @keyframes fadein-check {
     0% {
@@ -132,6 +122,7 @@
     }
 }
 
+.menu__container input:checked ~ .check-animation,
 .menu__container__type__card:hover .check-animation {
     animation-name: fadein-check;
     animation-duration: 0.7s;
@@ -143,6 +134,8 @@
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
+
+
 
 
 

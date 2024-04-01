@@ -2,74 +2,60 @@
 /* Desktop devices ( more/equal than 1024px) */
 @media (min-width: 1024px) {
 
-        /** Page d'accueil **/
-        .main-header {
+ /** Header  **/   
+    .main-header {
+        box-shadow: none;
+
+        a{
+            top: 25px;
+        }
+
+        img{
+            width:200px;
+        }
+    }
+
+
+     /** Page d'accueil **/
+    .main-container {
+        .location {
             box-shadow: none;
         }
-        .main-container {
-            .location {
-                box-shadow: none;
+
+        .banner {
+            h1 {
+                font-size:40px;
             }
-    
-            .fonctionnement{
-                padding-left:8%;
-                padding-right:8%;
-    
-                &__main {
-                    flex-direction:row;
-                }
+        }
+
+        .fonctionnement{
+            padding-left:8%;
+            padding-right:8%;
+
+            &__main {
+                flex-direction:row;
             }
-    
-            .restaurants {
-                padding-left:8%;
-                padding-right:8%;
-    
-                &__main {
-                    flex-direction:row;
-                    flex-wrap:wrap;
-                    justify-content: space-between;
-                    row-gap: 50px;
-                  
-                    a{
-                        width:46%;     
-                    }
+        }
+
+        .restaurants {
+            padding-left:8%;
+            padding-right:8%;
+
+            &__main {
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content: space-between;
+                row-gap: 50px;
+                
+                a{
+                    width:46%;     
                 }
             }
         }
+    }
     
-        .footer__menu {
-            flex-direction:row-reverse;
-            align-items:center;
-            padding: 65px 25px 22px 25px;
-    
-            h3 {
-                margin-bottom:0;
-                width:130px;
-            }
-    
-            ul{
-                display:flex;
-                gap:12px;
-    
-                :nth-child(2){
-                    width:190px;
-                }
-    
-                :nth-child(3){
-                    width:130px;
-                }
-    
-                :nth-child(4){
-                    width:130px;
-                }
-            } 
-        }
     
     /** Page des Menus **/
-    
-    .main-header a{
-        top: 25px;
-    }
     
     .banner__menu {
         img {
@@ -87,5 +73,35 @@
         justify-content:center;
     }
     
+    /** Footer **/
+
+    .footer__menu {
+        flex-direction:row-reverse;
+        align-items:center;
+        padding: 65px 25px 22px 25px;
+
+        h3 {
+            margin-bottom:0;
+            width:130px;
+        }
+
+        ul{
+            display:flex;
+            flex-direction:row;
+            gap:12px;
+
+            :nth-child(2){
+                width:190px;
+            }
+
+            :nth-child(3){
+                width:130px;
+            }
+
+            :nth-child(4){
+                width:130px;
+            }
+        } 
+    }
 
 }

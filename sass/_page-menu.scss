@@ -22,6 +22,7 @@
 .menu{
     display:flex;
     flex-direction: column;
+    position:relative;
     padding-top:  32px;
     margin-top: -32px;
     gap:40px;
@@ -42,7 +43,17 @@
         }
 
         &__icon{
+            input {
+                position:absolute;
+                cursor: pointer;
+                top:20px;
+                width: 32px;
+                height:50px;
+                z-index:50;
+                opacity: 0;
 
+            }
+        
             .fa-regular{
                 position:absolute;  
                 transition: all  1s ease-in-out;  
@@ -89,6 +100,7 @@
                 box-shadow: $card-shadow;
                 border-radius: 15px;
                 overflow: hidden;
+                position:relative;
              
                 &__content{
                     display:flex;
@@ -100,7 +112,7 @@
                     background-color: var(--white-color);
                     padding: 13.5px 15px 13.5px 15px;
                     gap:12px;
-            
+              
                     &__txt{
                         min-width: 0;
 
@@ -131,6 +143,18 @@
                     }
                 }
 
+                @for $i from 1 through 12 {  /** actuellement 10 plats maxi, prévu pour 12 **/
+                    #check-valid#{$i} {
+                        cursor: pointer;
+                        width: 59px;
+                        height: 75px;
+                        position: absolute;
+                        z-index: 100;
+                        opacity:0;
+                        right:0;
+                    }
+                }
+
                 &__check {
                     background-color: var(--check-green-color);
                     width:0px;
@@ -141,7 +165,7 @@
                     border-radius: 0 15px 15px 0;
                     text-align: center;
                     color: #fff;
-            
+
                     .fa-regular{
                         color: var(--check-green-color);
                         display:flex;
