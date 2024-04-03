@@ -41,15 +41,17 @@
             padding-left:8%;
             padding-right:8%;
 
+            .article{
+                width:46%;
+            }
+
             &__main {
                 flex-direction:row;
                 flex-wrap:wrap;
                 justify-content: space-between;
                 row-gap: 50px;
                 
-                a{
-                    width:46%;     
-                }
+            
             }
         }
     }

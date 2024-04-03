@@ -9,14 +9,14 @@
   /** Animation de l'icone Coeur Home-page et  page-menu au clic **/ 
 
   
-.restaurants__main__card input:checked ~ .icone-heart-regular,
+.restaurants__main__card__content__icon input:checked ~ .icone-heart-regular,
 .menu__title__icon input:checked ~ .icone-heart-regular {
     opacity:1;
     transition: 1s ease-in-out;
 }
 
 
-.restaurants__main__card input:checked ~ .icone-heart-solid,
+.restaurants__main__card__content__icon input:checked ~ .icone-heart-solid,
 .menu__title__icon input:checked ~ .icone-heart-solid {
     opacity:1;
     transition: 1s ease-in-out;
