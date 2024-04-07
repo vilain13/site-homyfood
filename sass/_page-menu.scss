@@ -33,7 +33,7 @@
     &__title{
         display:flex;
         align-items: center;
-        gap:30px;
+        gap:5%;
         
         h2{
         font-family: $font-title;
@@ -43,6 +43,7 @@
         }
 
         &__icon{
+            padding-right:5%;
             input {
                 position:absolute;
                 cursor: pointer;
@@ -108,7 +109,7 @@
                     flex:1;
                     flex-direction:row;
                     justify-content: space-between;
-                    border-radius: 15px;
+                   /**  border-radius: 15px; **/
                     background-color: var(--white-color);
                     padding: 13.5px 15px 13.5px 15px;
                     gap:12px;

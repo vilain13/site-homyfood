@@ -29,8 +29,8 @@
         }
 
         .fonctionnement{
-            padding-left:8%;
-            padding-right:8%;
+            padding-left:12%;
+            padding-right:12%;
 
             &__main {
                 flex-direction:row;
@@ -38,8 +38,8 @@
         }
 
         .restaurants {
-            padding-left:8%;
-            padding-right:8%;
+            padding-left:12%;
+            padding-right:12%;
 
             .article{
                 width:46%;
@@ -66,9 +66,14 @@
     }
     
     .menu-restaurant {
-        padding: 32px 203px 0 203px;
-        margin-left: 100px;
-        margin-right:100px;
+        padding: 32px 0 0 0;
+        margin-left: 190px;
+        margin-right:190px;
+
+        .menu{
+            max-width: 634px; /** la marge s'adapte auto en fonction de la largeur de l'écran, la largeur du conteneur plat reste fixe **/
+            margin:auto; /** la marge s'adapte auto en fonction de la largeur de l'écran, la largeur du conteneur plat reste fixe **/
+        }
     }
     
     .menu__title {

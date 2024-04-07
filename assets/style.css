@@ -35,6 +35,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--black-color);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0px;
 }
 
 /** Bouton call to action sur page acceuil et pages menu **/
@@ -43,7 +50,6 @@ a {
   text-align: center;
   color: var(--white-color);
   border-radius: 25px;
-  border: none;
   font-size: 1em;
   font-weight: 500;
   padding-top: 15px;
@@ -199,11 +205,11 @@ a {
 }
 .main-container .restaurants__main__card__blockimg {
   position: relative;
-  height: 197px;
+  height: 170px;
 }
 .main-container .restaurants__main__card__blockimg img {
   width: 100%;
-  height: 197px;
+  height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -345,13 +351,16 @@ a {
 .menu__title {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 5%;
 }
 .menu__title h2 {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: 400;
   font-style: italic;
+}
+.menu__title__icon {
+  padding-right: 5%;
 }
 .menu__title__icon input {
   position: absolute;
@@ -421,7 +430,7 @@ a {
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 15px;
+  /**  border-radius: 15px; **/
   background-color: var(--white-color);
   padding: 13.5px 15px 13.5px 15px;
   gap: 12px;
@@ -614,15 +623,15 @@ a {
     font-size: 40px;
   }
   .main-container .fonctionnement {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
   .main-container .fonctionnement__main {
     flex-direction: row;
   }
   .main-container .restaurants {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
   .main-container .restaurants .article {
     width: 46%;
@@ -638,9 +647,13 @@ a {
     height: 383px;
   }
   .menu-restaurant {
-    padding: 32px 203px 0 203px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 32px 0 0 0;
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+  .menu-restaurant .menu {
+    max-width: 634px; /** la marge s'adapte auto en fonction de la largeur de l'écran, la largeur du conteneur plat reste fixe **/
+    margin: auto; /** la marge s'adapte auto en fonction de la largeur de l'écran, la largeur du conteneur plat reste fixe **/
   }
   .menu__title {
     justify-content: center;
@@ -679,13 +692,11 @@ a {
 
 /** Animation de l'icone Coeur Home-page et  page-menu au clic **/
 .restaurants__main__card__content__icon input:checked ~ .icone-heart-regular,
-.menu__title__icon input:checked ~ .icone-heart-regular {
-  opacity: 1;
-  transition: 1s ease-in-out;
-}
-
+.menu__title__icon input:checked ~ .icone-heart-regular,
 .restaurants__main__card__content__icon input:checked ~ .icone-heart-solid,
-.menu__title__icon input:checked ~ .icone-heart-solid {
+.menu__title__icon input:checked ~ .icone-heart-solid,
+.menu__title__icon:hover .icone-heart-solid,
+.restaurants__main__card__content__icon:hover .icone-heart-solid {
   opacity: 1;
   transition: 1s ease-in-out;
 }
@@ -904,7 +915,7 @@ a {
     width: 0px;
   }
 }
-.menu__container input:checked ~ .check-animation,
+.menu__container__type__card input:checked ~ .check-animation,
 .menu__container__type__card:hover .check-animation {
   animation-name: fadein-check;
   animation-duration: 0.7s;

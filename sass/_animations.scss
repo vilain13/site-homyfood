@@ -10,17 +10,18 @@
 
   
 .restaurants__main__card__content__icon input:checked ~ .icone-heart-regular,
-.menu__title__icon input:checked ~ .icone-heart-regular {
-    opacity:1;
-    transition: 1s ease-in-out;
-}
-
-
+.menu__title__icon input:checked ~ .icone-heart-regular,
 .restaurants__main__card__content__icon input:checked ~ .icone-heart-solid,
-.menu__title__icon input:checked ~ .icone-heart-solid {
+.menu__title__icon input:checked ~ .icone-heart-solid,
+.menu__title__icon:hover .icone-heart-solid,
+.restaurants__main__card__content__icon:hover .icone-heart-solid
+{
     opacity:1;
     transition: 1s ease-in-out;
 }
+
+
+
 
 
 
@@ -87,6 +88,7 @@
     opacity: 0;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+
     }
   } 
 
@@ -122,7 +124,7 @@
     }
 }
 
-.menu__container input:checked ~ .check-animation,
+.menu__container__type__card input:checked ~ .check-animation,
 .menu__container__type__card:hover .check-animation {
     animation-name: fadein-check;
     animation-duration: 0.7s;
@@ -134,6 +136,8 @@
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
+
+
 
 
 
