@@ -260,8 +260,6 @@ button {
   position: absolute;
   right: 25px;
   bottom: 42px;
-  color: #101010;
-  transition: all 1s ease-in-out;
 }
 .main-container .restaurants__main__card__content__icon .fa-solid {
   position: absolute;
@@ -579,15 +577,6 @@ button {
   text-align: center;
   color: #fff;
 }
-.menu__container__type__card__check .fa-regular {
-  color: var(--check-green-color);
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 5%;
-  z-index: 250;
-  background-color: white;
-}
 
 .command-button {
   text-align: center;
@@ -691,8 +680,6 @@ button {
 }
 
 /** Animation de l'icone Coeur Home-page et  page-menu au clic **/
-.restaurants__main__card__content__icon input:checked ~ .icone-heart-regular,
-.menu__title__icon input:checked ~ .icone-heart-regular,
 .restaurants__main__card__content__icon input:checked ~ .icone-heart-solid,
 .menu__title__icon input:checked ~ .icone-heart-solid,
 .menu__title__icon:hover .icone-heart-solid,
